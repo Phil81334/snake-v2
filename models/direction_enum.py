@@ -9,7 +9,7 @@ from enum import Enum, auto
 # ====================================*/
 
 class SnakeDirectionEnum(Enum):
-    UP = auto()
-    DOWN = auto()
     LEFT = auto()
+    UP = auto()
     RIGHT = auto()
+    DOWN = auto()

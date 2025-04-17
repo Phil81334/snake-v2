@@ -12,9 +12,9 @@ import pygame
 
 class Cell:
     def __init__(self, index, x, y, width, height):
+        self.index = index
         self.x = x
         self.y = y
-        self.index = index
         self.width = width
         self.height = height
         self.color = (0, 0, 0)
