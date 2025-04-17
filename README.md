@@ -28,3 +28,7 @@ Phil81334 / PhilG81334
 
 Operating system: Windows
 Architecture: x64
+
+## Screenshot
+
+![Snake Game Screenshot](image.png)
