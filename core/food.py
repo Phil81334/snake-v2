@@ -20,11 +20,17 @@ class Food():
     def spawn(self, grid_cells, boundary_cells, snake_cells):
         while True:
             new_food_cell = random.choice(grid_cells)
-            if new_food_cell not in boundary_cells \
-                and new_food_cell not in snake_cells \
-                and new_food_cell != self.cell:
-                self.cell = new_food_cell
-                break
+            
+            if new_food_cell in boundary_cells:
+                continue
+                
+            if new_food_cell in snake_cells:
+                continue
+            
+            if new_food_cell == self.cell:
+                continue
+                
+            self.cell = new_food_cell
         
         # print(f"Food Cell: {self.cell.index}")
 
